@@ -4,3 +4,29 @@ _pycache_/
 node_modules/
 *.pyc
 uploads/
+# Node
+node_modules/
+npm-debug.log*
+
+# React/Vite
+frontend/dist/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ML
+models/checkpoints/
+dataset/raw/
+dataset/processed/
+
+# OS
+.DS_Store
+Thumbs.db
