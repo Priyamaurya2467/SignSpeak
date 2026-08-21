@@ -88,6 +88,18 @@ def main():
         # Draw detected hands
         for hand_landmarks in result.hand_landmarks:
 
+
+            print("Number of landmarks:", len(hand_landmarks))
+
+            for i,landmark in enumerate(hand_landmarks):
+                print(
+                    i,
+                    "x:", round(landmark.x,4),
+                    "y:", round(landmark.y,4),
+                    "z:", round(landmark.z,4)
+                )
+                break
+
             # Draw points
             for landmark in hand_landmarks:
 
